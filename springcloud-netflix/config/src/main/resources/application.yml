@@ -1,0 +1,18 @@
+#spring:
+#  profiles:
+#    active: local
+#
+server:
+  port: 9200
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri:
+          default-label: master
+          force-pull: true
+          username:
+          password:
